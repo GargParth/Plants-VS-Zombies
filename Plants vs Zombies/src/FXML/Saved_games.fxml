@@ -4,7 +4,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1280.0">
@@ -15,6 +14,21 @@
       <ImageView fitHeight="187.0" fitWidth="337.0" layoutX="472.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/savedgames.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="161.0" fitWidth="792.0" layoutX="244.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/savedgame1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="814.0" layoutX="233.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/savedgame2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="804.0" layoutX="252.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/savedgame3.png" />
          </image>
       </ImageView>
    </children>

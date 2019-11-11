@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#animate_progress_bar" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <ImageView fitHeight="720.0" fitWidth="1280.0">
+      <ImageView id="main_window" fitHeight="720.0" fitWidth="1280.0">
          <image>
-            <Image url="@../Images/generalbg.png" />
+            <Image url="@../Images/Stash/generalbg.png" />
          </image>
       </ImageView>
       <Pane layoutX="256.0" layoutY="89.0" prefHeight="432.0" prefWidth="768.0">
          <children>
             <ImageView fitHeight="432.0" fitWidth="768.0">
                <image>
-                  <Image url="@../Images/logo.png" />
+                  <Image url="@../Images/Stash/logo.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="543.0" layoutY="636.0" text="LOADING . . . " textFill="WHITE">
+      <Label id="lbl" fx:id="lbl" layoutX="543.0" layoutY="636.0" text="LOADING . . . " textFill="WHITE">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
+      <ProgressBar id="progress_bar" fx:id="progress_bar" layoutX="256.0" layoutY="571.0" prefHeight="34.0" prefWidth="768.0" progress="0.0">
+         <effect>
+            <DropShadow />
+         </effect></ProgressBar>
    </children>
 </Pane>
